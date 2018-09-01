@@ -9,6 +9,8 @@ namespace FavoriteThings.Things
         protected readonly string _whichItem;
 
         public string Item { get; protected set; }
+        public string Genre { get; protected set; }
+
         public string WhichItem { get; }
 
         public ThingBase(string whichItem)
@@ -21,9 +23,12 @@ namespace FavoriteThings.Things
         {
             Console.WriteLine($"What is your {_whichItem} favorite tv show?");
             Item = Console.ReadLine();
+            Console.WriteLine($"What genre is {Item}?");
+            Genre = Console.ReadLine();
         }
 
         //Ensure that each class that uses this base class has a print item method
+        public abstract void DoThings();
         public abstract void PrintItem();
     }
 }

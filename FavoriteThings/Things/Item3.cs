@@ -10,6 +10,15 @@ namespace FavoriteThings.Things
         public Item3() : base("third")
         { }
 
+        public override void DoThings()
+        {
+            string newPhrase = "";
+            foreach (var letter in Item)
+            {
+                newPhrase += letter + "-";
+            }
+        }
+
         //Print the name of the item in the console
         public override void PrintItem()
         {
