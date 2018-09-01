@@ -10,6 +10,11 @@ namespace FavoriteThings.Things
         public Item2() : base("second")
         { }
 
+        public override void DoThings()
+        {
+            Item.ToString().ToLower();
+        }
+
         //Print the name of the item in the console
         public override void PrintItem()
         {

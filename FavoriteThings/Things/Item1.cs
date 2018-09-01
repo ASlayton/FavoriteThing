@@ -10,6 +10,12 @@ namespace FavoriteThings.Things
         public Item1() : base("first")
         { }
 
+        public override void DoThings()
+        {
+            var changedLine1 = Item.ToString().ToUpper();
+            Console.WriteLine($"{changedLine1}");
+        }
+
         //Print the name of the item in the console
         public override void PrintItem()
         {

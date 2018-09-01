@@ -10,6 +10,11 @@ namespace FavoriteThings.Things
         public Item4() : base("fourth")
         { }
 
+        public override void DoThings()
+        {
+
+        }
+
         //Print the name of the item in the console
         public override void PrintItem()
         {

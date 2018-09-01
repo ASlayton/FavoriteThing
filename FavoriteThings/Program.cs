@@ -16,8 +16,12 @@ namespace FavoriteThings
             foreach (var item in things)
             {
                 item.GetItem();
+                item.DoThings();
             }
-
+            foreach (var item2 in things)
+            {
+                item2.PrintItem();
+            }
             Console.WriteLine("Press Enter To Exit.");
             Console.ReadLine();
         }
